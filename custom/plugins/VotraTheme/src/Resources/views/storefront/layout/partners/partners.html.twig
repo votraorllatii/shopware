@@ -1,0 +1,22 @@
+{% block highlight %}
+    <div class="highlight">
+        <div>
+            <img src="{{ theme_config('partner1Logo')|sw_encode_url }}">
+            <span>{{ theme_config('partner1Text') }}</span>
+        </div>
+        <div>
+            <img src="{{ theme_config('partner2Logo1')|sw_encode_url }}">
+            <img src="{{ theme_config('partner2Logo2')|sw_encode_url }}">
+        </div>
+        <div>
+            {% set stars = theme_config('partner3StarsCount') %}
+            <p class="partner-stars">
+            {% for i in 1..stars %}
+                <span class="star">★</span>
+            {% endfor %}
+            </p>
+            <p>{{ theme_config('partner3Text') }}</p>
+        </div>
+    </div>
+    </div>
+{% endblock %}

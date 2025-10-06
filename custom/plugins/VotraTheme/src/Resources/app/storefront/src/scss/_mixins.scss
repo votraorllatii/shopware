@@ -1,0 +1,15 @@
+@mixin flex($justify: flex-start, $align: stretch, $direction: row, $wrap: nowrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin flex-center {
+  @include flex(center, center);
+}
+
+@mixin text-white {
+  color: $color-white;
+}

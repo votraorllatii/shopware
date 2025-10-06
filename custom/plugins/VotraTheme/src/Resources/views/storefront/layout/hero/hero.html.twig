@@ -1,0 +1,61 @@
+{% block heroSection %}
+
+{% if theme_config('headerImage') %}
+    <div>
+        <div class="hero-section" style="background-image: url('{{ theme_config('headerImage')|sw_encode_url }}');">
+            <div class="hero-content">
+                <div class="title-icon">
+                    <h1 id="header-text">{{ theme_config('headerHtmlText') }}</h1>
+    <script>
+    const h1 = document.getElementById('header-text');
+    let html = h1.innerHTML;
+
+    html = html.replace(/(creator\.)/gi, '<span class="creator">$1</span>');
+
+    html = html.replace(/(future\.)/gi, '<span class="future">$1</span>');
+
+    h1.innerHTML = html;
+    </script>
+
+    <style>
+        .creator {
+            color: #EA5070;
+        }
+        .future {
+            color: #4EB3E7;
+        }
+    </style>
+                    <svg width="326" height="48" viewBox="0 0 326 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_g_346_711)">
+                    <path d="M8 40C34.0798 29.2273 92.9722 8.5 119.942 8.5C129.572 8.5 110.447 25.1364 89.4491 31.8182L184.139 13L162.472 31.8182C210.486 21.8636 282.192 18.5 317.5 18.5" stroke="#FDC604" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_g_346_711" x="-0.00146484" y="0.5" width="325.501" height="47.5016" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feTurbulence type="fractalNoise" baseFrequency="0.083333335816860199 0.083333335816860199" numOctaves="3" seed="4396" />
+                    <feDisplacementMap in="shape" scale="4" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+                    <feMerge result="effect1_texture_346_711">
+                    <feMergeNode in="displacedImage"/>
+                    </feMerge>
+                    </filter>
+                    </defs>
+                    </svg>
+                </div>                                
+{% set t = theme_config('toy')|split(' ') %}
+<p>
+  {{ t|slice(0, -1)|join(' ') }} <span style="color: #4EB3E7;">{{ t|last }}</span>
+</p>            </div>
+
+        <div class="button-style">
+            <button class="button-start">{{ theme_config('bgText') }}</button>
+            <div></div>
+        </div>
+    </div>
+    <div></div>
+    <div>
+  {% endif %}
+</div>
+
+
+{% endblock %}

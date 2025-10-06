@@ -1,0 +1,184 @@
+{
+  "name": "VotraTheme",
+  "author": "Shopware AG",
+  "views": [
+    "@Storefront",
+    "@Plugins",
+    "@VotraTheme"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/votra-theme/votra-theme.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "config": {
+    "tabs": {
+      "header": {
+        "label": {
+          "en-GB": "Header / Hero"
+        }
+      },
+      "partners": {
+        "label": {
+          "en-GB": "Partners Section"
+        }
+      }
+    },
+    "blocks": {
+      "headerContent": {
+        "label": {
+          "en-GB": "Header Text & Image"
+        }
+      },
+      "heroContent": {
+        "label": {
+          "en-GB": "Hero Content"
+        }
+      },
+      "partner1": {
+        "label": {
+          "en-GB": "Partner 1"
+        }
+      },
+      "partner2": {
+        "label": {
+          "en-GB": "Partner 2"
+        }
+      },
+      "partner3": {
+        "label": {
+          "en-GB": "Partner 3"
+        }
+      }
+    },
+    "fields": {
+      "headerText1": {
+        "label": {
+          "en-GB": "Header text 1"
+        },
+        "type": "text",
+        "tab": "header",
+        "block": "headerContent",
+        "value": "Order data 50%"
+      },
+      "headerText2": {
+        "label": {
+          "en-GB": "Header text 2"
+        },
+        "type": "text",
+        "tab": "header",
+        "block": "headerContent",
+        "value": "Test new"
+      },
+      "headerText3": {
+        "label": {
+          "en-GB": "Header text 3"
+        },
+        "type": "text",
+        "tab": "header",
+        "block": "headerContent",
+        "value": "votra"
+      },
+      "headerImage": {
+        "label": {
+          "en-GB": "Header Image"
+        },
+        "type": "media",
+        "tab": "header",
+        "block": "headerContent",
+        "value": null
+      },
+      "bgText": {
+        "label": {
+          "en-GB": "Background Text"
+        },
+        "type": "text",
+        "tab": "header",
+        "block": "heroContent",
+        "value": "Start Exploring"
+      },
+      "headerHtmlText": {
+        "label": {
+          "en-GB": "Hero Rich Text",
+          "de-DE": "Header HTML Text"
+        },
+        "type": "textarea",
+        "tab": "header",
+        "block": "heroContent",
+        "value": "Im a"
+      },
+      "toy":{
+        "label": {
+          "en-GB": "toy",
+          "de-DE": "toy"
+        },
+        "type": "textarea",
+        "tab": "header",
+        "block": "heroContent",
+        "value": "Give every child the power to create with Labbox."
+      },
+      "partner1Logo": {
+        "label": {
+          "en-GB": "Partner 1 Logo"
+        },
+        "type": "media",
+        "tab": "partners",
+        "block": "partner1",
+        "value": null
+      },
+      "partner1Text": {
+        "label": {
+          "en-GB": "Partner 1 Text"
+        },
+        "type": "text",
+        "tab": "partners",
+        "block": "partner1",
+        "value": "Official partner"
+      },
+      "partner2Logo1": {
+        "label": {
+          "en-GB": "Partner 2 Logo 1"
+        },
+        "type": "media",
+        "tab": "partners",
+        "block": "partner2",
+        "value": null
+      },
+      "partner2Logo2": {
+        "label": {
+          "en-GB": "Partner 2 Logo 2"
+        },
+        "type": "media",
+        "tab": "partners",
+        "block": "partner2",
+        "value": null
+      },
+      "partner3StarsCount": {
+        "label": {
+          "en-GB": "Partner 3 Star Count"
+        },
+        "type": "string",
+        "tab": "partners",
+        "block": "partner3",
+        "value": "5"
+      },
+      "partner3Text": {
+        "label": {
+          "en-GB": "Partner 3 Text"
+        },
+        "type": "string",
+        "tab": "partners",
+        "block": "partner3",
+        "value": "Loved by thousands of students worldwide"
+      }
+    }
+  }
+}

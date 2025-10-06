@@ -1,0 +1,14 @@
+{% block header %}
+    {% block base_header %}
+        <header class="header-main">
+            {% block base_header_inner %}
+                    {% sw_include '@Storefront/storefront/layout/header/header.html.twig' %}
+            {% endblock %}
+        </header>
+    {% endblock %}
+{% sw_include '@Storefront/storefront/layout/navbar/content.html.twig' %}
+{% sw_include '@Storefront/storefront/layout/hero/hero.html.twig' %}
+{% sw_include '@Storefront/storefront/layout/partners/partners.html.twig' %}
+
+
+{% endblock %}
