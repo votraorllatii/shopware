@@ -7,16 +7,15 @@
                 <div class="title-icon">
                     <h1 id="header-text">{{ theme_config('headerHtmlText') }}</h1>
     <script>
-    const h1 = document.getElementById('header-text');
-    let html = h1.innerHTML;
+        const h1 = document.getElementById('header-text');
+        let html = h1.innerHTML;
 
-    html = html.replace(/(creator\.)/gi, '<span class="creator">$1</span>');
+        html = html.replace(/(creator\.)/gi, '<span class="creator">$1</span>');
 
-    html = html.replace(/(future\.)/gi, '<span class="future">$1</span>');
+        html = html.replace(/(future\.)/gi, '<span class="future">$1</span>');
 
-    h1.innerHTML = html;
+        h1.innerHTML = html;
     </script>
-
     <style>
         .creator {
             color: #EA5070;
@@ -42,11 +41,11 @@
                     </defs>
                     </svg>
                 </div>                                
-{% set t = theme_config('toy')|split(' ') %}
-<p>
-  {{ t|slice(0, -1)|join(' ') }} <span style="color: #4EB3E7;">{{ t|last }}</span>
-</p>            </div>
-
+            {% set t = theme_config('toy')|split(' ') %}
+            <p>
+                {{ t|slice(0, -1)|join(' ') }} <span style="color: #4EB3E7;">{{ t|last }}</span>
+            </p>            
+            </div>
         <div class="button-style">
             <button class="button-start">{{ theme_config('bgText') }}</button>
             <div></div>

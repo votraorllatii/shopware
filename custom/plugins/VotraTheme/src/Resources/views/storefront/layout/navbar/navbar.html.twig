@@ -3,7 +3,6 @@
         {% set navbarOptions = {
             pathIdList: shopware.navigation.pathIdList
         } %}
-
         {% block layout_navbar_nav_element %}
             <nav class="navbar navbar-expand-lg main-navigation-menu"
                  id="main-navigation-menu"
@@ -16,15 +15,12 @@
                     <input class="menu-btn" type="checkbox" id="menu-btn" />
                     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                     <ul class="menu navbar-nav main-navigation-menu-list flex-wrap">
-
                         {% block layout_navbar_menu_items %}
-
                             {% for treeItem in header.navigation.tree %}
                                 {% set category = treeItem.category %}
                                 {% set id = category.id %}
                                 {% set name = category.translated.name %}
                                 {% set hasChildren = treeItem.children|length > 0 %}
-
                                 {% block layout_navbar_menu_item %}
                                     <li class="nav-title nav-item-{{ id }} {% if hasChildren %}dropdown position-static{% endif %}">
                                         {% block layout_navbar_menu_item_link %}
